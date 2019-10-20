@@ -1,0 +1,6 @@
+a = input()
+b = list(a)
+c = list(a)
+b.remove(c[0])
+b.remove(c[len(c) - 1])
+print(''.join(map(str, b)))   

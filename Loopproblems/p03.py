@@ -1,0 +1,6 @@
+a = input()
+b = a.split(" ")
+b1 = int(b[0])
+b2 = int(b[1])
+if b2 < 0: print(b1, "*", "(", b2, ")", "=", b1*b2, sep="")
+else: print(b1, "*", b2, "=", b1*b2, sep="")

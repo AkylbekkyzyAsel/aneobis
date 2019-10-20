@@ -1,0 +1,6 @@
+a = input()
+b = a.split()
+a1 = int(b[0])
+a2 = int(b[1])
+n = int(b[2])
+print(a1 + (n-1)*(a2-a1))

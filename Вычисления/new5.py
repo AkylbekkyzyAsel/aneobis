@@ -1,0 +1,6 @@
+a = input()
+b = a.split(" ")
+h = int(b[0])
+m = int(b[1])
+s = int(b[2])
+print(3600*h + 60 * m + s)

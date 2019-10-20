@@ -1,0 +1,16 @@
+import math
+
+a = input()
+b = a.split(" ")
+x1 = float(b[0])
+y1 = float(b[1])
+x2 = float(b[2])
+y2 = float(b[3])
+x3 = float(b[4])
+y3 = float(b[5])
+s1 = float('{:.5f}'.format(math.sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2))))
+s2 = float('{:.5f}'.format(math.sqrt((x2-x3)*(x2-x3) + (y2-y3)*(y2-y3))))
+s3 = float('{:.5f}'.format(math.sqrt((x3-x1)*(x3-x1) + (y3-y1)*(y3-y1))))
+p = 1 / 2 * (s1 + s2 + s3)
+s = float('{:.1f}'.format(math.sqrt(p*(p-s1)*(p-s2)*(p-s3))))
+print(s1 + s2 + s3, s)
